@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">4</td><td class="num">0</td><td class="num">37,619</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">completeSanityWebAndroid.CompleteWebAndAndroidSanity</td><td><a href="#m0">OneTimeConfig</a></td><td rowspan="1">1536136664537</td><td rowspan="1">37572</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">completeSanityWebAndroid.CompleteWebAndAndroidSanity</td><td><a href="#m1">Setup</a></td><td rowspan="4">1536136702140</td><td rowspan="4">0</td></tr><tr class="skippedeven"><td><a href="#m2">Setup</a></td></tr><tr class="skippedeven"><td><a href="#m3">Setup</a></td></tr><tr class="skippedeven"><td><a href="#m4">Setup</a></td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">completeSanityWebAndroid.CompleteWebAndAndroidSanity</td><td><a href="#m5">Channel</a></td><td rowspan="1">1536136702140</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">LiveScenarios</a></td><td rowspan="1">1536136702156</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">TC1</a></td><td rowspan="1">1536136702124</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">TC11</a></td><td rowspan="1">1536136702140</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">completeSanityWebAndroid.CompleteWebAndAndroidSanity#OneTimeConfig</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/slf4j/Logger
+	at org.apache.logging.slf4j.SLF4JLoggerContext.getLogger(SLF4JLoggerContext.java:39)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:34)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:30)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:52)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:40)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:55)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
+	at org.apache.http.conn.ssl.AbstractVerifier.&lt;init&gt;(AbstractVerifier.java:61)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;init&gt;(AllowAllHostnameVerifier.java:44)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;clinit&gt;(AllowAllHostnameVerifier.java:46)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.&lt;clinit&gt;(SSLConnectionSocketFactory.java:146)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.getClientConnectionManager(HttpClientFactory.java:72)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:58)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:61)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.getDefaultHttpClientFactory(ApacheHttpClient.java:253)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.&lt;init&gt;(ApacheHttpClient.java:224)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:69)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)
+	at completeSanityWebAndroid.QuickMonitoringbase.initializeAndroidDriverNetsfere(QuickMonitoringbase.java:127)
+	at completeSanityWebAndroid.CompleteWebAndAndroidSanity.OneTimeConfig(CompleteWebAndAndroidSanity.java:53)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 47 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">completeSanityWebAndroid.CompleteWebAndAndroidSanity#Setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">completeSanityWebAndroid.CompleteWebAndAndroidSanity#Setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">completeSanityWebAndroid.CompleteWebAndAndroidSanity#Setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">completeSanityWebAndroid.CompleteWebAndAndroidSanity#Setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">completeSanityWebAndroid.CompleteWebAndAndroidSanity#Channel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/slf4j/Logger
+	at org.apache.logging.slf4j.SLF4JLoggerContext.getLogger(SLF4JLoggerContext.java:39)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:34)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:30)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:52)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:40)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:55)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
+	at org.apache.http.conn.ssl.AbstractVerifier.&lt;init&gt;(AbstractVerifier.java:61)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;init&gt;(AllowAllHostnameVerifier.java:44)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;clinit&gt;(AllowAllHostnameVerifier.java:46)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.&lt;clinit&gt;(SSLConnectionSocketFactory.java:146)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.getClientConnectionManager(HttpClientFactory.java:72)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:58)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:61)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.getDefaultHttpClientFactory(ApacheHttpClient.java:253)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.&lt;init&gt;(ApacheHttpClient.java:224)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:69)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)
+	at completeSanityWebAndroid.QuickMonitoringbase.initializeAndroidDriverNetsfere(QuickMonitoringbase.java:127)
+	at completeSanityWebAndroid.CompleteWebAndAndroidSanity.OneTimeConfig(CompleteWebAndAndroidSanity.java:53)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 47 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">completeSanityWebAndroid.CompleteWebAndAndroidSanity#LiveScenarios</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/slf4j/Logger
+	at org.apache.logging.slf4j.SLF4JLoggerContext.getLogger(SLF4JLoggerContext.java:39)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:34)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:30)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:52)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:40)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:55)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
+	at org.apache.http.conn.ssl.AbstractVerifier.&lt;init&gt;(AbstractVerifier.java:61)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;init&gt;(AllowAllHostnameVerifier.java:44)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;clinit&gt;(AllowAllHostnameVerifier.java:46)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.&lt;clinit&gt;(SSLConnectionSocketFactory.java:146)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.getClientConnectionManager(HttpClientFactory.java:72)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:58)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:61)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.getDefaultHttpClientFactory(ApacheHttpClient.java:253)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.&lt;init&gt;(ApacheHttpClient.java:224)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:69)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)
+	at completeSanityWebAndroid.QuickMonitoringbase.initializeAndroidDriverNetsfere(QuickMonitoringbase.java:127)
+	at completeSanityWebAndroid.CompleteWebAndAndroidSanity.OneTimeConfig(CompleteWebAndAndroidSanity.java:53)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 47 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">completeSanityWebAndroid.CompleteWebAndAndroidSanity#TC1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/slf4j/Logger
+	at org.apache.logging.slf4j.SLF4JLoggerContext.getLogger(SLF4JLoggerContext.java:39)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:34)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:30)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:52)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:40)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:55)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
+	at org.apache.http.conn.ssl.AbstractVerifier.&lt;init&gt;(AbstractVerifier.java:61)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;init&gt;(AllowAllHostnameVerifier.java:44)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;clinit&gt;(AllowAllHostnameVerifier.java:46)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.&lt;clinit&gt;(SSLConnectionSocketFactory.java:146)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.getClientConnectionManager(HttpClientFactory.java:72)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:58)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:61)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.getDefaultHttpClientFactory(ApacheHttpClient.java:253)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.&lt;init&gt;(ApacheHttpClient.java:224)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:69)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)
+	at completeSanityWebAndroid.QuickMonitoringbase.initializeAndroidDriverNetsfere(QuickMonitoringbase.java:127)
+	at completeSanityWebAndroid.CompleteWebAndAndroidSanity.OneTimeConfig(CompleteWebAndAndroidSanity.java:53)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 47 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">completeSanityWebAndroid.CompleteWebAndAndroidSanity#TC11</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/slf4j/Logger
+	at org.apache.logging.slf4j.SLF4JLoggerContext.getLogger(SLF4JLoggerContext.java:39)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:34)
+	at org.apache.logging.log4j.jcl.LogAdapter.newLogger(LogAdapter.java:30)
+	at org.apache.logging.log4j.spi.AbstractLoggerAdapter.getLogger(AbstractLoggerAdapter.java:52)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:40)
+	at org.apache.logging.log4j.jcl.LogFactoryImpl.getInstance(LogFactoryImpl.java:55)
+	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
+	at org.apache.http.conn.ssl.AbstractVerifier.&lt;init&gt;(AbstractVerifier.java:61)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;init&gt;(AllowAllHostnameVerifier.java:44)
+	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.&lt;clinit&gt;(AllowAllHostnameVerifier.java:46)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.&lt;clinit&gt;(SSLConnectionSocketFactory.java:146)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.getClientConnectionManager(HttpClientFactory.java:72)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:58)
+	at org.openqa.selenium.remote.internal.HttpClientFactory.&lt;init&gt;(HttpClientFactory.java:61)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.getDefaultHttpClientFactory(ApacheHttpClient.java:253)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient$Factory.&lt;init&gt;(ApacheHttpClient.java:224)
+	at io.appium.java_client.remote.AppiumCommandExecutor.&lt;init&gt;(AppiumCommandExecutor.java:69)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)
+	at completeSanityWebAndroid.QuickMonitoringbase.initializeAndroidDriverNetsfere(QuickMonitoringbase.java:127)
+	at completeSanityWebAndroid.CompleteWebAndAndroidSanity.OneTimeConfig(CompleteWebAndAndroidSanity.java:53)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.Logger
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 47 more
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
