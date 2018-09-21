@@ -15,12 +15,7 @@
     
    
        <class name="completeSanityWebAndroid.CompleteWebAndAndroidSanity"/>
-       <!-- 
-       <methods>       
-       	<include name="Conversation"></include>
-       </methods>
-        </class>       
-      -->
+      
     </classes>
   
   

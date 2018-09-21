@@ -13,10 +13,7 @@
     <classes>
       <class name="completeSanityWebAndroid.CompleteWebAndAndroidSanity">
         <methods>
-          <include name="Channel"/>
-          <include name="LiveScenarios"/>
           <include name="OneTimeConfig"/>
-          <include name="TC11"/>
           <include name="Conversation"/>
           <include name="Setup"/>
         </methods>
