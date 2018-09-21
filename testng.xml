@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test name="Test">
   
-    <parameter name="username1" value="androiduser@nrathya.netsferetest.org"/>
-  <parameter name="username3" value="webuser@nrathya.netsferetest.org"/>
-  <parameter name="username2" value="iosuser@nrathya.netsferetest.org"/>
-  
+   <parameter name="username1" value= "androiduser@nrathya.netsferetest.org"/>
+  <parameter name="username3" value= "webuser@nrathya.netsferetest.org"/>
+  <parameter name="username2" value= "iosuser@nrathya.netsferetest.org"/>  
   <parameter name="user1" value="webuser"/>
   <parameter name="user2" value="androiduser"/>
-  <parameter name="user3" value="iosuser"/>
-    <classes>
+  <parameter name="user3" value="iosuser"></parameter>
+  <parameter name="boxuserid" value="mural.tallapudi@infinite.comi"></parameter>
+  <parameter name="boxpassword" value="Tmk@swan1"></parameter>
+  <classes>
+    
    
        <class name="completeSanityWebAndroid.CompleteWebAndAndroidSanity"/>
-       <!--
-       <methods>
-       
-       <include name="LiveScenarios"></include>
+       <!-- 
+       <methods>       
+       	<include name="Conversation"></include>
        </methods>
-        </class>
-       -->
-       </classes>
+        </class>       
+      -->
+    </classes>
+  
+  
+  
+  
   </test> <!-- Test -->
 </suite> <!-- Suite -->

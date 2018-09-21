@@ -102,19 +102,25 @@ public static  AndroidDriver<AndroidElement> initializeAndroidDriverNetsfere() t
 		File app_path = new File(f,"NetSfere.apk");
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities() ;
-		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
+		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");		
 		capabilities.setCapability(CapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 		capabilities.setCapability(MobileCapabilityType.APPIUM_VERSION, "1.7.2");		
 		
-//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"3300f7968b2c63c9"); // NCO Samsung Phone
-//		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.0");
+//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"3293a2427d63"); // Murali Redmi
+//		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"6.0.1");
+	
+//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"7ad390bf7d25"); // Nexus 
+//		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.1.2");
 		
-//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"4200d75a6a97949b"); // Moto G3
-//		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.0");
+//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"CVH7N16516000263"); // Nexus 6P
+//		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"8.1.0");
 		
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"7ad390bf7d25"); // Nexus 
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.1.2");
+//		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"7ad390bf7d25"); // NCO Redmi
+//		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.1.2");
 		
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"f814c2910504"); // Netsfere Test  Redmi
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"7.0");
+				
 		
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,"com.infinite.netsfere");
 		capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"com.infinite.netsfere.SplashActivity");
@@ -132,7 +138,7 @@ public static  AndroidDriver<AndroidElement> initializeAndroidDriverNetsfere() t
 
 public static ChromeDriver chromeDriverInitialize() {
 	
-	System.setProperty("webdriver.chrome.driver", "D:\\NCO_Monitoring_Script_software\\NCO_Monitoring_Script_software\\chromedriver.exe");	
+	System.setProperty("webdriver.chrome.driver", "D:\\Software\\chromedriver.exe");	
 	
 	ChromeOptions options=new ChromeOptions();
 	Map<String, Object> prefs=new HashMap<String,Object>();
@@ -146,3 +152,4 @@ public static ChromeDriver chromeDriverInitialize() {
 }	
 	
 }
+

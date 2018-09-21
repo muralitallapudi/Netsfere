@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <test name="Test(failed)">
     <parameter name="user1" value="webuser"/>
     <parameter name="user2" value="androiduser"/>
+    <parameter name="boxpassword" value="Tmk@swan1"/>
     <parameter name="username3" value="webuser@nrathya.netsferetest.org"/>
+    <parameter name="boxuserid" value="mural.tallapudi@infinite.comi"/>
     <parameter name="username2" value="iosuser@nrathya.netsferetest.org"/>
     <parameter name="username1" value="androiduser@nrathya.netsferetest.org"/>
     <parameter name="user3" value="iosuser"/>
@@ -15,7 +17,7 @@
           <include name="LiveScenarios"/>
           <include name="OneTimeConfig"/>
           <include name="TC11"/>
-          <include name="TC1"/>
+          <include name="Conversation"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- completeSanityWebAndroid.CompleteWebAndAndroidSanity -->
